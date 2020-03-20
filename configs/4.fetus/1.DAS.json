@@ -1,4 +1,6 @@
 {
+  "speed_test": false,
+  "save_path": "data/4.fetus/1.DAS",
   "worker": "DelayAndSum",
   "transducer_frequency": 5e6,
   "sampling_frequency": 4e7,

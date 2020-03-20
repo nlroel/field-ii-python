@@ -7,8 +7,13 @@ from . import MatlabEngine
 
 class EnginePool:
     def __init__(self):
-        session_names = matlab.engine.find_matlab()
-        self.engines = list(map(MatlabEngine, session_names))
+        # session_names = matlab.engine.find_matlab()
+        # self.engines = list(map(MatlabEngine, session_names))
+        engines = []
+        for i in range(8):
+            engines.append(matlab.engine.start_matlab("-nodesktop -nojvm -nosplash"))
+        self.engines = engines
+
 
     def need(self, n):
         if len(self.engines) < n:

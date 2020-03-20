@@ -1,4 +1,4 @@
-chinese = False
+chinese = True
 
 
 def language(chinese_str, english_str):
