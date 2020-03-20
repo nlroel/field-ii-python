@@ -11,6 +11,7 @@ import numpy as np
 
 class DelayAndSumWorker(field.MatlabWorker):
     def run(self, para: param.Parameter, *args):
+        self.e = field.matlab_engine.MatlabEngine()
         self.e.field_init()
         self.e.set_sampling(para.sampling_frequency)
 
