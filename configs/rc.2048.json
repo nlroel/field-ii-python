@@ -13,7 +13,7 @@
   "kerf": 2.5e-05,
   "focus": [0.0, 0.0, 3.3e-2],
   "row_count": 2048,
-  "dynamic_range": 30,
+  "dynamic_range": 50,
   "z_start": 5e-3,
   "z_size": 40e-3,
   "point_count": 5000,
